@@ -1,0 +1,22 @@
+﻿<Window x:Class="session4_projects.ContentAlignment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:session4_projects"
+        mc:Ignorable="d"
+        Title="ContentAlignment" Height="450" Width="800">
+ 
+        <StackPanel>
+            <Button HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom"
+                Background="Yellow" FontSize="22" Height="80">Left</Button>
+            <Button HorizontalContentAlignment="Center" VerticalContentAlignment="Top"
+                Background="LightBlue" FontSize="22" Height="80">Center</Button>
+            <Button HorizontalContentAlignment="Right" VerticalContentAlignment="Center"
+                Background="Yellow" FontSize="22" Height="80">Right</Button>
+            <Button HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"
+                Background="LightBlue" FontSize="22" Height="80">Left</Button>
+        </StackPanel>
+  
+
+</Window>
