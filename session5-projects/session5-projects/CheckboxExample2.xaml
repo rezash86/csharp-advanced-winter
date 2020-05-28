@@ -1,0 +1,35 @@
+﻿<Window x:Class="session5_projects.CheckboxExample2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:session5_projects"
+        mc:Ignorable="d"
+        Title="CheckboxExample2" Height="150" Width="250">
+    <StackPanel Margin="10">
+        <Label FontWeight="Bold">Application Options</Label>
+        <CheckBox>
+            <TextBlock>
+                Enable Feature <Run FontWeight="Bold" Foreground="Green">ABC</Run>
+            </TextBlock>
+        </CheckBox>
+        <CheckBox IsChecked="True">
+            <WrapPanel>
+                <TextBlock>
+                    Enable Feature <Run FontWeight="Bold">XYZ</Run>
+                </TextBlock>
+                <Image Source="/images/simpson.jpeg" Height="14" Width="27"></Image>
+            </WrapPanel>
+        </CheckBox>
+        <CheckBox>
+            <TextBlock>
+                Enable Feature <Run Foreground="Blue" TextDecorations="Underline" FontWeight="Bold">WWW</Run>
+            </TextBlock>
+        </CheckBox>
+        <CheckBox IsThreeState="True" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked">
+            <TextBlock Foreground="Blue" TextDecorations="Underline" FontWeight="Bold">
+                enable All
+            </TextBlock>
+        </CheckBox>
+    </StackPanel>
+</Window>
