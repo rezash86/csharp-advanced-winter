@@ -1,0 +1,35 @@
+﻿<Window x:Class="session6_projects.ListBoxExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:session6_projects"
+        mc:Ignorable="d"
+        Title="ListBoxExample" Height="350" Width="520">
+    <Grid Height="319" VerticalAlignment="Bottom">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="241*"/>
+            <ColumnDefinition Width="276*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="lstBox1" Grid.Column="0">
+            <ListBoxItem>One</ListBoxItem>
+            <ListBoxItem>Two</ListBoxItem>
+            <ListBoxItem>Three</ListBoxItem>
+            <ListBoxItem>Four</ListBoxItem>
+            <ListBoxItem>Five</ListBoxItem>
+        </ListBox>
+        <ListBox x:Name="lstBox2" Grid.Column="1">
+            <ListBoxItem>One</ListBoxItem>
+            <Button>Item two</Button>
+            <CheckBox>Currently Employed</CheckBox>
+            <Expander Header="Available colors">
+                <StackPanel>
+                    <RadioButton Background="Red" Margin="15,5">Red</RadioButton>
+                    <RadioButton Background="Yellow" Margin="15,5">Yellow</RadioButton>
+                    <RadioButton Background="Brown" Margin="15,5">Brown</RadioButton>
+                    <RadioButton Background="LightBlue" Margin="15,5">LightBlue</RadioButton>
+                </StackPanel>
+            </Expander>
+        </ListBox>
+    </Grid>
+</Window>

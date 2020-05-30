@@ -1,0 +1,48 @@
+﻿<Window x:Class="session6_projects.TabExample1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:session6_projects"
+        mc:Ignorable="d"
+        Title="TabExample1" Height="350" Width="500">
+    <Grid>
+        <TabControl>
+            <TabItem Header="January">
+                <GroupBox Header="Shirts" Height="120" Width="190">
+                    <StackPanel>
+                        <Label Content="Choose the size you required..."></Label>
+                        <CheckBox>1</CheckBox>
+                        <CheckBox>2</CheckBox>
+                        <CheckBox>3</CheckBox>
+                    </StackPanel>
+                </GroupBox> 
+            </TabItem>
+            <TabItem Header="February">
+                <Grid ShowGridLines="True" Background="LightCoral">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="120*"/>
+                        <ColumnDefinition Width="120*"/>
+                        <ColumnDefinition Width="120*"/>
+                        <ColumnDefinition Width="120*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        
+                    </Grid.RowDefinitions>
+                </Grid>
+            </TabItem>
+            <TabItem Header="March">
+                <StackPanel HorizontalAlignment="Left" Background="BlueViolet">
+                    <Button Content="Item 1"></Button>
+                    <Button Content="Item 2"></Button>
+                    <Button Content="Item 3"></Button>
+                    
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

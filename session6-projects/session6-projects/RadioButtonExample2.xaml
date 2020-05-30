@@ -1,0 +1,29 @@
+﻿<Window x:Class="session6_projects.RadioButtonExample2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:session6_projects"
+        mc:Ignorable="d"
+        Title="RadioButtonExample2" Height="230" Width="250">
+    <StackPanel Margin="10">
+        <Label FontWeight="Bold">Are you ready?</Label>
+        
+        <RadioButton GroupName="Ready">
+            <WrapPanel>
+                <Image Source="/image/homer-simpson.jpeg" Height="14"></Image>
+                <TextBlock Text="Yes" Foreground="Green" FontWeight="Bold">
+                </TextBlock>
+            </WrapPanel>
+        </RadioButton>
+        
+        
+        <RadioButton GroupName="Ready" IsChecked="True">No</RadioButton>
+        <RadioButton GroupName="Ready">Maybe</RadioButton>
+
+        <Label Content="Male or Female" FontWeight="Bold"></Label>
+        <RadioButton GroupName="Gender" IsChecked="True">Male</RadioButton>
+        <RadioButton GroupName="Gender">Female</RadioButton>
+        <RadioButton GroupName="Gender">Not Sure</RadioButton>
+    </StackPanel>
+</Window>
