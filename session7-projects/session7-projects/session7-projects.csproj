@@ -55,8 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CalendarExample.xaml.cs">
+      <DependentUpon>CalendarExample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DataGridExample.xaml.cs">
       <DependentUpon>DataGridExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DatePickerExample.xaml.cs">
+      <DependentUpon>DatePickerExample.xaml</DependentUpon>
     </Compile>
     <Compile Include="ExampleOfRespondChange2.xaml.cs">
       <DependentUpon>ExampleOfRespondChange2.xaml</DependentUpon>
@@ -65,9 +71,23 @@
     <Compile Include="RespondToChanges.xaml.cs">
       <DependentUpon>RespondToChanges.xaml</DependentUpon>
     </Compile>
+    <Compile Include="service\EmployeeService.cs" />
+    <Compile Include="SliderExample.xaml.cs">
+      <DependentUpon>SliderExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabControlExample.xaml.cs">
+      <DependentUpon>TabControlExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TreeViewExample.xaml.cs">
+      <DependentUpon>TreeViewExample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UpdateSourceTriggerExample.xaml.cs">
       <DependentUpon>UpdateSourceTriggerExample.xaml</DependentUpon>
     </Compile>
+    <Page Include="CalendarExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CodeBehindExample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -81,6 +101,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DataGridExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DatePickerExample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -110,6 +134,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="RespondToChanges.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SliderExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TabControlExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TreeViewExample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

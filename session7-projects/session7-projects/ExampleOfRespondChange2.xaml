@@ -4,11 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:session7_projects"
-        xmlns:model="clr-namespace:session7_projects.Model"
+        xmlns:mymodel="clr-namespace:session7_projects.Model"
         mc:Ignorable="d"
         Title="ExampleOfRespondChange2" Height="250" Width="100">
     <Window.Resources>
-        <model:Person x:Key="m"></model:Person>
+        <mymodel:Person x:Key="m"></mymodel:Person>
     </Window.Resources>
     <Grid DataContext="{Binding Source={StaticResource m}}">
         <Grid.RowDefinitions>
