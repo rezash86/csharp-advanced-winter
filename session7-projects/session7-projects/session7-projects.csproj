@@ -58,6 +58,10 @@
     <Compile Include="DataGridExample.xaml.cs">
       <DependentUpon>DataGridExample.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ExampleOfRespondChange2.xaml.cs">
+      <DependentUpon>ExampleOfRespondChange2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Person.cs" />
     <Compile Include="RespondToChanges.xaml.cs">
       <DependentUpon>RespondToChanges.xaml</DependentUpon>
     </Compile>
@@ -77,6 +81,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DataGridExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ExampleOfRespondChange2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
