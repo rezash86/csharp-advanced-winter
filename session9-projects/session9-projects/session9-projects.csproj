@@ -36,7 +36,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,6 +57,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ConnectDBForm.xaml.cs">
+      <DependentUpon>ConnectDBForm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DataGridExample.xaml.cs">
       <DependentUpon>DataGridExample.xaml</DependentUpon>
     </Compile>
@@ -67,6 +72,10 @@
     <Compile Include="ListviewWithGridView.xaml.cs">
       <DependentUpon>ListviewWithGridView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="model\Employee.cs" />
+    <Compile Include="RowDataGrid.xaml.cs">
+      <DependentUpon>RowDataGrid.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TestForm.xaml.cs">
       <DependentUpon>TestForm.xaml</DependentUpon>
     </Compile>
@@ -76,6 +85,10 @@
     <Compile Include="usercontrols\UserControl2.xaml.cs">
       <DependentUpon>UserControl2.xaml</DependentUpon>
     </Compile>
+    <Page Include="ConnectDBForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DataGridExample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -104,6 +117,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RowDataGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TestForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -143,6 +160,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="images\simpson.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\depp.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
