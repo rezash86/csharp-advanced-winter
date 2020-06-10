@@ -1,0 +1,15 @@
+﻿<Window x:Class="session4_projects.CanvasExample2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:session4_projects"
+        mc:Ignorable="d"
+        Title="CanvasExample2" Height="300" Width="250">
+    <Canvas>
+        <Ellipse Fill="Gray" Canvas.Left="25" Canvas.Top="25" Width="200" Height="200"></Ellipse>
+        <Rectangle Fill="LightBlue" Canvas.Left="25" Canvas.Top="25" Height="50" Width="50" ></Rectangle>
+        <Rectangle Fill="Red" Canvas.Left="50" Canvas.Top="50"  Height="50" Width="50" Panel.ZIndex="10"></Rectangle>
+        <Rectangle Fill="Green" Canvas.Left="75" Canvas.Top="75" Height="50" Width="50" ></Rectangle>
+    </Canvas>
+</Window>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="session4_projects.RotateExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:session4_projects"
+        mc:Ignorable="d"
+        Title="RotateExample" Height="450" Width="800">
+    <!--<StackPanel>
+        <Button Background="Beige" Height="25" Width="100">One</Button>
+        <Button Background="Beige" Height="25" Content="Two" Width="100">
+            <Button.LayoutTransform>
+                <RotateTransform Angle="16" />
+            </Button.LayoutTransform>
+        </Button>
+    </StackPanel>-->
+
+    <Canvas Height="200" Width="200">
+
+        <!-- Rotates the Polyline 45 degrees about the point (25,50). -->
+        <Polyline Points="25,25 0,50 25,75 50,50 25,25 25,0" 
+    Stroke="Blue" StrokeThickness="10"
+    Canvas.Left="75" Canvas.Top="50">
+            <Polyline.RenderTransform>
+                <RotateTransform CenterX="25" CenterY="50" Angle="45" />
+            </Polyline.RenderTransform>
+        </Polyline>
+    </Canvas>
+
+</Window>

@@ -1,0 +1,18 @@
+﻿<Window x:Class="session7_projects.DataBinding1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:session7_projects"
+        mc:Ignorable="d"
+        Title="DataBinding1" Height="100" Width="280">
+    <StackPanel>
+        <TextBox x:Name="txtValue"/>
+        <WrapPanel Margin="0, 10">
+            <TextBlock Text="Value :"/>
+            <!--data context-->
+            <!--Text : Name of the property-->
+            <TextBlock Text="{Binding Path=Text, ElementName=txtValue}"/>
+        </WrapPanel>
+    </StackPanel>
+</Window>

@@ -1,0 +1,40 @@
+﻿<Window x:Class="session4_projects.FlowDirectionExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:session4_projects"
+        mc:Ignorable="d"
+        Title="FlowDirectionExample" Height="450" Width="800">
+    <Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="HorizontalContentAlignment / FlowDirection Values" Grid.Row="0" Grid.ColumnSpan="2"
+           HorizontalAlignment="Center"/>
+
+        <Label Content="Left / LeftToRight" Grid.Row="1" Grid.Column="0"
+           HorizontalAlignment="Stretch" HorizontalContentAlignment="Left"
+           Background="Bisque"/>
+        <Label Content="Left / RightToLeft" Grid.Row="1" Grid.Column="1"
+           HorizontalAlignment="Stretch" HorizontalContentAlignment="Left"
+           FlowDirection="RightToLeft"
+           Background="Bisque"/>
+
+        <Label Content="Right / LeftToRight" Grid.Row="2" Grid.Column="0"
+           HorizontalAlignment="Stretch" HorizontalContentAlignment="Right"
+           Background="Bisque"/>
+        <Label Content="Right / RightToLeft" Grid.Row="2" Grid.Column="1"
+           HorizontalAlignment="Stretch" HorizontalContentAlignment="Right"
+           FlowDirection="RightToLeft"
+           Background="Bisque"/>
+    </Grid>
+</Window>

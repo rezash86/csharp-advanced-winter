@@ -1,0 +1,32 @@
+﻿<Window x:Class="session7_projects.TreeViewExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:session7_projects"
+        mc:Ignorable="d"
+        Title="TreeViewExample" Height="350" Width="500">
+    <Grid>
+        <StackPanel>
+            <CheckBox Content="Include C" HorizontalAlignment="Left" Margin="0,10"
+                      Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"></CheckBox>
+            <TreeView x:Name="tvChars">
+                <TreeViewItem Header="A">
+                    <TreeViewItem>
+                        <TreeViewItem.Header>
+                            <StackPanel Orientation="Horizontal">
+                                <Ellipse Fill="Red" Width="5" Height="5"/>
+                                <TextBlock Text="AA" Margin="5"/>
+                            </StackPanel>
+                        </TreeViewItem.Header>
+                    </TreeViewItem>
+                </TreeViewItem>
+                <TreeViewItem Header="B"/>
+                <!--<TreeViewItem Header="C">
+                    <TreeViewItem Header="CC"/>
+                </TreeViewItem>-->
+
+            </TreeView>
+        </StackPanel>
+    </Grid>
+</Window>

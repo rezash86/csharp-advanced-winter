@@ -1,0 +1,21 @@
+﻿<Window x:Class="session5_projects.CheckboxExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:session5_projects"
+        mc:Ignorable="d"
+        Title="CheckboxExample" Height="350" Width="500">
+    <Grid>
+        <CheckBox x:Name="chChoc" Checked="chChoc_Checked"  Click="chChoc_Click"
+                  Unchecked="chChoc_Unchecked" Content="Extra Chocolate" 
+                  HorizontalAlignment="Left" Margin="5,60,0,-60"></CheckBox>
+        <CheckBox x:Name="chSugar" Content="No Sugar" Checked="chSugar_Checked" 
+                  Unchecked="chSugar_Unchecked" HorizontalAlignment="Left" 
+                  Height="319" VerticalAlignment="Bottom" Margin="125,0,0,-60"></CheckBox>
+        
+        <Label x:Name="label1" HorizontalAlignment="Right" VerticalAlignment="Top" Height="50" Width="282"></Label>
+        <Label x:Name="label2" HorizontalAlignment="Right" VerticalAlignment="Top" Height="25" Width="282"></Label>
+
+    </Grid>
+</Window>

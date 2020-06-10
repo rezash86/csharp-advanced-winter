@@ -1,0 +1,52 @@
+﻿<Window x:Class="session9_projects.ListViewExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:session9_projects"
+        mc:Ignorable="d"
+        Title="ListViewExample" Height="200" Width="400">
+    <Grid>
+        <ListView Margin="10" Name="lvUsers">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="Name : "/>
+                        <TextBlock Text="{Binding Name}" FontStyle="Italic"/>
+                        <TextBlock Text=" Age : "/>
+                        <TextBlock Text="{Binding Age}" FontStyle="Oblique"/>
+                        <TextBlock Text=" ("/>
+                        
+                        <TextBlock Text="{Binding Mail}" TextDecorations="Underline" Foreground="Blue" FontStyle="Normal" FontWeight="Bold"
+                                   Cursor="Hand"/>
+                        <TextBlock Text=" )"/>
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+            
+            
+            
+            
+            
+            <!--<ListViewItem>
+                <StackPanel Orientation="Horizontal">
+                    <Ellipse Fill="Red" Width="10" Height="10"/>
+                    <TextBlock>RED</TextBlock>
+                </StackPanel>
+            </ListViewItem>
+            <ListViewItem>
+                <StackPanel Orientation="Horizontal">
+                    <Ellipse Fill="Green" Width="10" Height="10"/>
+                    <TextBlock>Green</TextBlock>
+                </StackPanel>
+            </ListViewItem>
+            <ListViewItem>
+                <StackPanel Orientation="Horizontal">
+                    <Ellipse Fill="Blue" Width="10" Height="10"/>
+                    <TextBlock>blue</TextBlock>
+                </StackPanel>
+            </ListViewItem>-->
+        </ListView>
+    </Grid>
+</Window>

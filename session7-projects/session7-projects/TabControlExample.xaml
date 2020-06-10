@@ -1,0 +1,27 @@
+﻿<Window x:Class="session7_projects.TabControlExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:session7_projects"
+        mc:Ignorable="d"
+        Title="TabControlExample" Height="300" Width="350">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal">
+            <Button x:Name="btnPrevious" Click="btnPrevious_Click">Previous</Button>
+            <Button x:Name="btnNext" Click="btnNext_Click">Next</Button>
+            <Button x:Name="btnSelected" Click="btnSelected_Click">Selected</Button>
+        </StackPanel>
+        <TabControl x:Name="tcSample">
+            <TabItem Header="General">
+                <ComboBox Name="items" Width="100" Height="50">
+                    <ComboBoxItem Content="A"/>
+                    <ComboBoxItem Content="B"/>
+                    <ComboBoxItem Content="C"/>
+                </ComboBox>
+            </TabItem>
+            <TabItem Header="security"/>
+            <TabItem Header="Details"/>
+        </TabControl>
+    </DockPanel>
+</Window>

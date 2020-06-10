@@ -1,0 +1,39 @@
+﻿<Window x:Class="session9_projects.DataGridExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:session9_projects"
+        mc:Ignorable="d"
+        Title="DataGridExample" Height="300" Width="550">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="170*"/>
+            <RowDefinition Height="99*"/>
+        </Grid.RowDefinitions>
+        <DataGrid AutoGenerateColumns="False" BorderBrush="Gray" IsReadOnly="True"
+                  CanUserResizeColumns="False" CanUserReorderColumns="False" 
+                  BorderThickness="5" HorizontalScrollBarVisibility="Visible"
+                  VerticalScrollBarVisibility="Hidden" SelectionMode="Extended"
+                  GridLinesVisibility="All" Background="LightBlue" 
+                  RowBackground="LightYellow" AlternatingRowBackground="Red"
+                  HeadersVisibility="All" Height="200" Width="500"
+                  HorizontalAlignment="Left" Margin="12,20,0,0"
+                  x:Name="MyDataGrid" VerticalAlignment="Top" RowHeight="30" ColumnWidth="100" Grid.RowSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="name!" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Age" Binding="{Binding Age}"/>
+                <DataGridTemplateColumn Header="Birth date">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <DatePicker SelectedDate="{Binding BirthDay}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridCheckBoxColumn Header="has spouse" Binding="{Binding HasSpouse}"/>
+                <DataGridHyperlinkColumn Header="email" Binding="{Binding Mail}"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+    </Grid>
+</Window>

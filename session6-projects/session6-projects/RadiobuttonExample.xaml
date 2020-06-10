@@ -1,0 +1,20 @@
+﻿<Window x:Class="session6_projects.RadiobuttonExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:session6_projects"
+        mc:Ignorable="d"
+        Title="RadiobuttonExample" Height="300" Width="400">
+    <StackPanel>
+        <RadioButton x:Name="rb1" GroupName="A" Checked="rb1_Checked" Unchecked="rb1_Unchecked">Option 1</RadioButton>
+        <RadioButton x:Name="rb2" GroupName="A" Checked="rb2_Checked" Unchecked="rb2_Unchecked">Option 2</RadioButton>
+        <RadioButton x:Name="rb3" IsChecked="True" GroupName="A" Checked="rb3_Checked" Unchecked="rb3_Unchecked">Option 3</RadioButton>
+
+        <RadioButton x:Name="rb4" >choice 1</RadioButton>
+        <RadioButton x:Name="rb5" IsChecked="True">choice 2</RadioButton>
+        <RadioButton x:Name="rb6" >choice 3</RadioButton>
+
+        <Label x:Name="lblTest" Content="TEST!"></Label>
+    </StackPanel>
+</Window>
